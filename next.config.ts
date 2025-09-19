@@ -1,9 +1,12 @@
-import type { NextConfig } from "next";
+// next.config.ts
+
+import { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   output: 'export',
-  /* config options here */
-};
+  basePath: '/pangolinshell.github.io',
+  assetPrefix: '/pangolinshell.github.io/',
+  // autres options si besoin
+}
 
-module.exports = nextConfig
-export default nextConfig;
+export default nextConfig
