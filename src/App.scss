@@ -1,0 +1,40 @@
+@use "./components/palette" as *;
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: $color-background;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-zoom {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $color-background;
+}
+
+/* DESKTOP ZOOM */
+@media (min-width: 1024px) {
+  .app-zoom {
+    --page-scale: 1.12;
+
+    transform: scale(var(--page-scale));
+    transform-origin: top center;
+
+    width: calc(100% / var(--page-scale));
+    min-height: calc(100vh / var(--page-scale));
+
+    margin: 0 auto;
+  }
+}

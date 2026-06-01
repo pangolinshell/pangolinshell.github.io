@@ -3,6 +3,7 @@ import ProjectCarousel from "./components/ProjectCarousel";
 import type { Project } from "./components/ProjectCarousel";
 import Contact from "./components/Contact";
 import AboutMe from "./components/AboutMe";
+import './App.scss';
 
 const projects: Project[] = [
   {
@@ -33,7 +34,7 @@ const projects: Project[] = [
 
 function App() {
   return (
-    <>
+    <div className="app">
       <BrutalistHeader />
       <section id="about_me"><AboutMe /></section>
       <section id="projects">
@@ -42,7 +43,7 @@ function App() {
       <section id="contact">
         <Contact/>
       </section>
-    </>
+    </div>
   );
 }
 
