@@ -1,0 +1,190 @@
+@use "./palette" as *;
+
+$font-main: Arial, Helvetica, sans-serif;
+
+$border-brutal: 5px solid $color-primary;
+$border-button: 4px solid $color-primary;
+$border-scrollbar: 3px solid $color-primary;
+
+$shadow-brutal: 8px 8px 0 $color-primary;
+$shadow-accent: 8px 8px 0 $color-primary;
+$shadow-button: 5px 5px 0 $color-primary;
+$shadow-hover: 7px 7px 0 $color-primary;
+$shadow-active: 2px 2px 0 $color-primary;
+
+.project-section {
+  padding: 48px 32px;
+  background-color: $color-background;
+  font-family: $font-main;
+  color: $color-primary;
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    h2 {
+      margin: 0;
+      font-size: 48px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $color-primary;
+      background-color: $color-white;
+      border: $border-brutal;
+      padding: 8px 16px;
+      box-shadow: $shadow-accent;
+    }
+  }
+
+  .project-controls {
+    display: flex;
+    gap: 12px;
+
+    button {
+      width: 52px;
+      height: 52px;
+      background-color: $color-accent;
+      border: $border-button;
+      color: $color-primary;
+      font-size: 24px;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: $shadow-button;
+
+      &:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: $shadow-hover;
+      }
+
+      &:active {
+        transform: translate(3px, 3px);
+        box-shadow: $shadow-active;
+      }
+    }
+  }
+
+  .project-carousel {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 12px 8px 24px 0;
+
+    &::-webkit-scrollbar {
+      height: 14px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $color-white;
+      border: $border-scrollbar;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-primary;
+    }
+  }
+
+  .project-card {
+    min-width: 320px;
+    max-width: 320px;
+    background-color: $color-white;
+    border: $border-brutal;
+    box-shadow: $shadow-accent;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-bottom: $border-brutal;
+    }
+
+    .project-card-content {
+      padding: 20px;
+
+      h3 {
+        margin: 0 0 12px;
+        font-size: 26px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $color-primary;
+      }
+
+      p {
+        margin: 0 0 20px;
+        font-size: 16px;
+        line-height: 1.4;
+        color: $color-primary;
+      }
+
+      a {
+        display: inline-block;
+        background-color: $color-accent;
+        color: $color-primary;
+        border: $border-button;
+        padding: 10px 14px;
+        font-weight: 900;
+        text-decoration: none;
+        text-transform: uppercase;
+        box-shadow: $shadow-button;
+
+        &:hover {
+          transform: translate(-2px, -2px);
+          box-shadow: $shadow-hover;
+        }
+
+        &:active {
+          transform: translate(3px, 3px);
+          box-shadow: $shadow-active;
+        }
+      }
+    }
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .project-section {
+    padding: 32px 16px;
+    overflow: hidden;
+
+    .project-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      h2 {
+        font-size: 36px;
+      }
+    }
+
+    .project-controls {
+      display: none;
+    }
+
+    .project-carousel {
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding-left: 0;
+      padding: 12px 0 28px 0;
+
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .project-card {
+      min-width: 100%;
+      max-width: 100%;
+      scroll-snap-align: center;
+      box-sizing: border-box;
+
+      img {
+        height: 220px;
+      }
+    }
+  }
+}
