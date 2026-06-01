@@ -24,6 +24,8 @@ $shadow-active: 2px 2px 0 $color-primary;
 }
 
 .header {
+  position: sticky;
+  top: 0;
   width: 100%;
   box-sizing: border-box;
   padding: 20px 32px;

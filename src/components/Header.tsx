@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaAlignJustify, FaXmark } from "react-icons/fa6";
 import "./Header.scss";
 
 function BrutalistHeader() {
@@ -15,17 +16,14 @@ function BrutalistHeader() {
           aria-expanded={isOpen}
           aria-label="Toggle navigation menu"
         >
-          ☰
+          {isOpen ? <FaXmark /> : <FaAlignJustify />}
         </button>
       </div>
 
       <nav className={`nav ${isOpen ? "open" : ""}`}>
-        {/* <a href="#">Home</a> */}
-        <a href="#about_me">About</a>
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-
-        {/* <button className="header-button">Start</button> */}
       </nav>
     </header>
   );
