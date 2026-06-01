@@ -7,10 +7,16 @@ import './App.scss';
 
 const projects: Project[] = [
   {
+    title: "Social Network",
+    image: "./src/assets/preview_sn2.png",
+    description: "404UM is a real-time forum built with Go, WebSockets, and SQLite. It allows users to register, log in, create posts, comment, exchange direct messages, and see who’s online—all updated live via WebSockets.",
+    link: "https://github.com/LilGreyCat/404um",
+  },
+  {
     title: "Multiplayer fps",
     image: "https://raw.githubusercontent.com/pangolinshell/raycasting-fps/master/preview.png",
-    description: "A small multiplayer game made in rust and an homemade raycasting engine",
-    link: "",
+    description: "A retro multiplayer game made in rust and an homemade raycasting engine",
+    link: "https://github.com/pangolinshell/raycasting-fps",
   },
   {
     title: "Smart-Road",
@@ -19,17 +25,11 @@ const projects: Project[] = [
     link: "https://github.com/pangolinshell/smart-road",
   },
   {
-    title: "Weather App",
-    image: "/projects/weather-app.png",
-    description: "A weather dashboard using an external API and responsive UI.",
-    link: "https://example.com",
-  },
-  {
-    title: "Linux Monitor",
-    image: "/projects/linux-monitor.png",
-    description: "A low-level Linux process monitoring tool written in C.",
-    link: "https://example.com",
-  },
+    title: "MyEasySqlite",
+    image: "./src/assets/thumbnail_mesql.png",
+    description: "MyEasySQL is a student projet of Go package intended to simplify SQL querys and executions, initialy attended only for social network, i moved it into it's how project.",
+    link: "https://github.com/pangolinshell/myeasysql",
+  }
 ];
 
 function App() {
