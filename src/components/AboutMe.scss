@@ -63,13 +63,20 @@ $shadow-hover: 7px 7px 0 $color-primary;
 .about-box,
 .current-project-box {
   border: $border-brutal;
-  padding: 24px;
+  padding: 32px;
   background-color: $color-gray-200;
   box-shadow: $shadow-brutal;
   flex: 0.8;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
   h3 {
-    margin: 0 0 16px;
+    margin: 0 0 18px;
     font-size: 36px;
     font-weight: 900;
     text-transform: uppercase;
@@ -77,9 +84,10 @@ $shadow-hover: 7px 7px 0 $color-primary;
   }
 
   p {
+    max-width: 520px;
     margin: 0 0 16px;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.55;
     font-weight: 700;
     color: $color-primary;
 
