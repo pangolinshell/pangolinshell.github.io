@@ -8,7 +8,7 @@ import './App.scss';
 const projects: Project[] = [
   {
     title: "Social Network",
-    image: "./src/assets/preview_sn2.png",
+    image: "https://raw.githubusercontent.com/pangolinshell/pangolinshell.github.io/refs/heads/assets/thumbnails/socialnetwork.png",
     description: "404UM is a real-time forum built with Go, WebSockets, and SQLite. It allows users to register, log in, create posts, comment, exchange direct messages, and see who’s online—all updated live via WebSockets.",
     link: "https://github.com/LilGreyCat/404um",
   },
@@ -26,7 +26,7 @@ const projects: Project[] = [
   },
   {
     title: "MyEasySqlite",
-    image: "./src/assets/thumbnail_mesql.png",
+    image: "https://raw.githubusercontent.com/pangolinshell/pangolinshell.github.io/refs/heads/assets/thumbnails/myeasysql.png",
     description: "MyEasySQL is a student projet of Go package intended to simplify SQL querys and executions, initialy attended only for social network, i moved it into it's how project.",
     link: "https://github.com/pangolinshell/myeasysql",
   }
