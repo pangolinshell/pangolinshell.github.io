@@ -20,7 +20,7 @@ function BrutalistHeader() {
         </button>
       </div>
 
-      <nav className={`nav ${isOpen ? "open" : ""}`}>
+      <nav className={`nav ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(false)}>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
