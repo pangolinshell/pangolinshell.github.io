@@ -24,6 +24,7 @@ $shadow-active: 2px 2px 0 $color-primary;
 }
 
 .header {
+  z-index: 9999;
   position: sticky;
   top: 0;
   width: 100%;
