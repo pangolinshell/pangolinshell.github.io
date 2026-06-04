@@ -15,18 +15,18 @@ const contacts = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/your-profile",
+    href: "https://www.linkedin.com/in/romann-belmer-368a09331/",
     icon: <FaLinkedinIn />,
   },
   {
     label: "Discord",
-    href: "https://www.linkedin.com/in/your-profile",
+    href: "cyberpangolin",
     icon: <FaDiscord />,
   },
   
   {
     label: "Email",
-    href: "mailto:your.email@example.com",
+    href: "mailto:romann.belmer@protonmail.com",
     icon: <FaEnvelope />,
   },
 ];
