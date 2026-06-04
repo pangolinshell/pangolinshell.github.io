@@ -20,7 +20,7 @@ const contacts = [
   },
   {
     label: "Discord",
-    href: "cyberpangolin",
+    href: "https://discordapp.com/users/370965854210359296",
     icon: <FaDiscord />,
   },
   
